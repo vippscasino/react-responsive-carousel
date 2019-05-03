@@ -346,7 +346,8 @@ class Carousel extends Component {
 
     onSwipeEnd = () => {
         this.setState({
-            swiping: false
+            swiping: false,
+            cancelClick: false
         });
         this.autoPlay();
     }
